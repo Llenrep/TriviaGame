@@ -1,0 +1,23 @@
+body{
+    background-image: url(../images/Dag.png)
+}
+
+h1{
+    color: white;
+    font-size: 30px;
+
+}
+
+ins{
+    text-shadow: 5px 1.3px grey;
+}
+
+.question {
+    margin: 120px 130px 170px 170px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    height: 70%;
+    position: fixed;
+    box-shadow: 0 0 5px 10px #555;
+    color: white;
+}
