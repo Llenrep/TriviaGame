@@ -6,8 +6,7 @@
         <title>Louis Pierre Questionaire</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" /> 
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>    
+        <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />     
     </head>
     
     <body>  
@@ -18,84 +17,49 @@
                 </div>
             </div>
 
+            <div class="row">
+                <div class="col-md-12">
+                    <center><h1 class="under">Complete the song phrase!</h1></center>
+                </div>
+            </div>
+
             <!-- <p class="empty space"></p> -->
             <p class="Correct"></p>
             <p class="Wrong"></p>
 
             <div class="row">
                 <div class="col-md-2"></div>
-                <div class="col-md-8">
-                    <center><div id="questions" class="question"></div></center>
+                <div class="col-md-8" id="questions-div">
+                    <center><div id="questions" class="question"></div>]
+                        <div id="buttons">
+                                <button id="pot-ans-1" type="button" class="btn btn-secondary"></button>
+                                <button id="pot-ans-2" type="button" class="btn btn-secondary"></button>
+                                <button id="pot-ans-3" type="button" class="btn btn-secondary"></button>
+                                <button id="pot-ans-4" type="button" class="btn btn-secondary"></button>
+                        </div>
+                    
+                    </center>
+
+                    <p id="timer"></p>
+                    
+                    
+
                 </div>
                 <div class="col-md-2"></div>
             </div>
-        
-        <!--Im gonna keep the code down below in case I plan to do it another way
-        Currently, the way I see it, I can create that one questions div and
-        then frmo there, constantly replace the information within the div after
-        10 seconds are up. Seems pretty basic. And that would mean I could just create
-        10 functions for this one single div, 12 if you count activating the timer every time-->
-        <!-- <center><div id="question2" class="question"></div></center>
-        <center><div id="question3" class="question"></div></center>
-        <center><div id="question4" class="question"></div></center>
-        <center><div id="question5" class="question"></div></center>
-        <center><div id="question6" class="question"></div></center>
-        <center><div id="question7" class="question"></div></center>
-        <center><div id="question8" class="question"></div></center> -->
-       
+    
         </div>
-
-        <script>
-            function timer(){
-                
-                
-            }
-
-            function nextQuestion(){
-
-            }
-
-            function question1(){
-
-            }
+      
+        <!-- Scripts -->
+        <div>
             
-            function question2(){
-
-            }
-
-            function question3(){
-
-            }
-
-            function question4(){
-
-            }
-
-            function question5(){
-
-            }
-
-            function question6(){
-
-            }
-
-            function question7(){
-
-            }
-
-            function question8(){
-
-            }
-
-            $("#questions").html('<h2>"How Do You fucking spell questionaire?"</h2>')
-
-            document.ready(function(){
-                
-                var amountCorrect = 0;
-                var amountWrong = 0;
-
-            })
-        </script>
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+                    crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+                    crossorigin="anonymous"></script>
+            <script src="assets/javascript/app.js"></script>
+    
+        </div>
     
     </body>
 

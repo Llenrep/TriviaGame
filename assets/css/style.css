@@ -1,10 +1,17 @@
 body{
-    background-image: url(../images/Dag.png)
+    background-image: url(../images/Dag.png);
+    width: 100%;
 }
 
 h1{
     color: white;
     font-size: 30px;
+
+}
+
+.under{
+    border: 1px solid black;
+    margin: 40px 510px 20px 510px;
 
 }
 
@@ -20,4 +27,21 @@ ins{
     position: fixed;
     box-shadow: 0 0 5px 10px #555;
     color: white;
+}
+
+
+#pot-ans-1:hover{
+    color: black;
+}
+
+#pot-ans-2:hover{
+    color: black;
+}
+
+#pot-ans-3:hover{
+    color: black;
+}
+
+#pot-ans-4:hover{
+    color: black;
 }
