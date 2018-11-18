@@ -1,66 +1,103 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Louis Pierre Questionaire</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />     
-    </head>
-    
-    <body>  
-        <div id="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <center><ins><h1 class="Top">Welcome To Pernell's Trivia!</h1></ins></center>
-                </div>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Louis Pierre Questionaire</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+</head>
+
+<body>
+    <div id="container">
+        <div class="row">
+            <div class="col-md-12">
+                <center><ins>
+                        <h1 class="Top">Welcome To Pernell's Trivia!</h1>
+                    </ins></center>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <center>
+                    <h1 class="under">Complete the song phrase!</h1>
+                </center>
+            </div>
+        </div>
+
+        <!-- <p class="empty space"></p> -->
+        <div class="ratio-c-w">
+            <center>
+                <p class="Correct"></p>
+                <p class="Wrong"></p>
+            </center>
+        </div>
+
+        <div class="row">
+            <div class="col-md-2">
+
             </div>
 
-            <div class="row">
-                <div class="col-md-12">
-                    <center><h1 class="under">Complete the song phrase!</h1></center>
-                </div>
+            <div class="col-md-8">
+                <center>
+                    <p class="timer">00:00</p>
+                </center>
             </div>
 
-            <!-- <p class="empty space"></p> -->
-            <p class="Correct"></p>
-            <p class="Wrong"></p>
+            <div class="col-md-2">
+
+            </div>
+        </div>
+       
+
+        <div class="Qcontainer"> <!--contains both the question and the buttons in an entire div-->
 
             <div class="row">
                 <div class="col-md-2"></div>
                 <div class="col-md-8" id="questions-div">
-                    <center><div id="questions" class="question"></div>]
-                        <div id="buttons">
-                                <button id="pot-ans-1" type="button" class="btn btn-secondary"></button>
-                                <button id="pot-ans-2" type="button" class="btn btn-secondary"></button>
-                                <button id="pot-ans-3" type="button" class="btn btn-secondary"></button>
-                                <button id="pot-ans-4" type="button" class="btn btn-secondary"></button>
-                        </div>
-                    
+                    <center>
+                        <div id="questions" class="question"></div>
                     </center>
-
-                    <p id="timer"></p>
-                    
-                    
-
                 </div>
                 <div class="col-md-2"></div>
             </div>
-    
+
+            <div class="row">
+                <div class="col-md-2"></div>
+
+                <div class="col-md-8">
+                    <center>
+                        <div id="buttons">
+                            <button id="pot-ans-1" type="button" class="btn btn-secondary"></button>
+                            <button id="pot-ans-2" type="button" class="btn btn-secondary"></button>
+                            <button id="pot-ans-3" type="button" class="btn btn-secondary"></button>
+                            <button id="pot-ans-4" type="button" class="btn btn-secondary"></button>
+                        </div>
+                    </center>
+                </div>
+
+                <div class="col-md-2"></div>
+            </div>
+
         </div>
-      
-        <!-- Scripts -->
-        <div>
-            
-            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-                    crossorigin="anonymous"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-                    crossorigin="anonymous"></script>
-            <script src="assets/javascript/app.js"></script>
-    
-        </div>
-    
-    </body>
+
+    </div>
+
+    <!-- Scripts -->
+    <div>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+        <script src="assets/javascript/app.js"></script>
+
+    </div>
+
+</body>
 
 </html>
