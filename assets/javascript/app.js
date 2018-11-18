@@ -1,19 +1,33 @@
 var amountCorrect = 0;
 var amountWrong = 0;
-var time = 10;
+var time = 100;
+
+var userChoice;
+var correctAnswer;
+
+var queryURL;
+var APIkey;
 
 function timer() {
     setTimeout(function(){
-        time--;
-        var mins = Math.floor(time/10/60);
+
+        time--; //its a countdown so we are looking for decerements specifically
+        
         var secs = Math.floor(time/10);
         var tenths = time % 10;
-        document.getElementById("timer").innerHTML = mins + ":" + secs;
-        //     var x = setInterval(function() {
-        //     alert("alert WHADDUP");
-        //     console.log("whats really going on");
-        //   }, 5000); 
+
+        document.getElementById("timer").innerHTML = secs + ":" + tenths; //I have no need for the minutes portion, its been opted out
+
         timer();
+
+        if(secs === -1) {
+            time = 100;
+            $("#timer").html("");
+            alert("10");
+            // clearTimeout(function(){  
+            // })     
+        }
+
     },100);                   
 }
 
@@ -34,50 +48,56 @@ function result(){ //just formats the page to show a "results" screen
 // Okay
 // We set the value for the correct answer
 // first we need the buttons to be able to do something when clicked
+// we got the buttons to do something and userchoice has a value, however, im not sure
+// because right now the button is set equal to the actual html element.
+// do I want that? or do I want a value. each of the questions have 4 variables but
+// scratch that, just choose the one that will increase your score and the ones that wont,
+// i have a good feeling ill run into issues with this later but im gonna go with it. push
 
 function question1(){
     console.log("Question 1");
     $("#questions").html('<h2>"Do You Remeber? The..."</h2>');
     var ans1 = $("#pot-ans-1").html("<p>21st Night of September...</p>");
+    // var cred1 = something;
     var ans2 = $("#pot-ans-2").html("<p>The Way...</p>");
     var ans3 = $("#pot-ans-3").html("<p>How the stars stole the night away...</p>");
     var ans4 = $("#pot-ans-4").html("<p>My thoughts are with you...</p>");
 
-    var userChoice;
+    // var userChoice;
 
-    correctAnswer = ans1;
+    correctAnswer = ans1; //equal to the actual html
 
-    $("#pot-ans-1").on("click", function(){
-        console.log("choice 1")
+    $("#pot-ans-1").on("click", function() {
+
         userChoice = ans1;
+
+        amountCorrect++;
 
     });
 
-    // $("#pot-ans-2").on("click", function(){
+    $("#pot-ans-2").on("click", function(){
 
-    //     userChoice = ans2;
+        userChoice = ans2;
 
-    // });
+        amountWrong++;
 
-    // $("#pot-ans-3").on("click", function(){
+    });
 
-    //     userChoice = ans3;
+    $("#pot-ans-3").on("click", function(){
 
-    // });
+        userChoice = ans3;
 
-    // $("#pot-ans-4").on("click", function(){
+        amountWrong++;
 
-    //     userChoice = ans4;
+    });
 
-    // });
+    $("#pot-ans-4").on("click", function(){
 
-    if (userChoice === correctAnswer){
-        amountCorrect++;
-        console.log("Correct Answer!");
-    } //else {
-    //     amountWrong++;
-    //     console.log("Wrong Answer!")
-    // }
+        userChoice = ans4;
+
+        amountWrong++;
+
+    });
   
 };
 
@@ -121,9 +141,9 @@ $(document).ready(function(){
     
 
 
-    // question1();
+    question1();
 
-    timer();
+    // timer();
 
     // result();
 
