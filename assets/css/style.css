@@ -21,7 +21,7 @@ ins{
 
 /*the actual question gets its own div as to look different from the rest of the buttons*/
 .question {
-    margin: 120px 130px 170px 170px;
+    margin: 90px 130px 150px 170px;
     border: 1px solid grey;
     border-radius: 10px;
     box-shadow: 0px 0px 5px 10px #555;
@@ -49,6 +49,9 @@ ins{
     /* text-align: center; */
 }
 
+#buttons{
+    margin: 0px 0px 40px 0px
+}
 
 #pot-ans-1:hover{
     color: black;
